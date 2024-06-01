@@ -16,7 +16,7 @@ Output: false
 
 ### Solution
 
-```
+```php
 class Solution
 {
 
