@@ -1,4 +1,4 @@
-### [Back](./)
+[Back](./)
 
 # 796. Rotate String
 
