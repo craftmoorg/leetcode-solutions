@@ -12,7 +12,7 @@ Input: s = "rat", t = "car"
 Output: false
 
 ### Solution
-```
+```php
 class Solution
 {
 
