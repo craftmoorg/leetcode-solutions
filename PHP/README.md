@@ -3,6 +3,7 @@
 ## [Array](./array)
 
 - [1. Two Sum](./array/1-two-sum.md)
+- [1. Two Sum](./array/4-median-of-two-sorted-arrays.md)
 
 ## [String](./string)
 
