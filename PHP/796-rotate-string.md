@@ -9,11 +9,15 @@ A shift on s consists of moving the leftmost character of s to the rightmost pos
 For example, if s = "abcde", then it will be "bcdea" after one shift.
 
 - Example 1:
+\
 Input: s = "abcde", goal = "cdeab"
+\
 Output: true
 
 - Example 2:
+\
 Input: s = "abcde", goal = "abced"
+\
 Output: false
 
 ### Solution
