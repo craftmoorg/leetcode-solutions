@@ -39,26 +39,32 @@ class Solution {
      * @return String
      */
     function countAndSay($n) {
-        if ($n <= 0) {
-            return "";
+        if ($n == 1) {
+            return '1';
         }
 
-        $result = "1";
-        for ($i = 2; $i <= $n; $i++) {
+        $current = 1;
+    
+        for ($i = 1; $i <= $n; $i++) {
+            $length = strlen($current);
+            $string = '';
             $count = 1;
-            $say = "";
-            for ($j = 1; $j < strlen($result); $j++) {
-                if ($result[$j] == $result[$j - 1]) {
+
+            for ($j = 1; $j < $length; $j++) {
+                if ($current[$j] == $current[$j - 1]) {
                     $count++;
                 } else {
-                    $say .= $count . $result[$j - 1];
+                    $string .= $count . $current[$j - 1];
                     $count = 1;
                 }
             }
-            $say .= $count . $result[strlen($result) - 1];
-            $result = $say;
+            
+            $string .= $count . $current[$length - 1];
+            
+            $current = $string;
         }
-        return $result;
+    
+        return $current;
     }
 }
 ```
